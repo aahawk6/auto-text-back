@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator | The Auto Text-Back</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="calculator-section">
+        <div id="roi-calculator-container">
+            <div class="logo-text">The Auto Text-Back</div>
+            <h1>ROI Calculator</h1>
+
+            <div class="input-group">
+                <label for="client-value">Average Client Value:</label>
+                <input type="number" id="client-value" placeholder="1000">
+            </div>
+
+            <div class="input-group">
+                <label for="missed-calls">Missed Calls per Week:</label>
+                <input type="number" id="missed-calls" placeholder="10">
+            </div>
+
+            <div class="input-group">
+                <label for="close-rate">Average Close Rate (%):</label>
+                <input type="number" id="close-rate" placeholder="20">
+            </div>
+
+            <button id="calculate-btn">Calculate ROI</button>
+
+            <div id="results">
+                <h2>Results:</h2>
+                <div class="result-item">
+                    <span>Monthly $$$ Left on Table:</span>
+                    <span id="monthly-left" class="value">0.00</span>
+                </div>
+                <div class="result-item">
+                    <span>We Charge (per month):</span>
+                    <span id="we-charge" class="value">297.00</span>
+                </div>
+                <div class="result-item">
+                    <span>ROI:</span>
+                    <span id="roi" class="value">0.00%</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="info-section">
+            <h2>Get An Estimate Of How Much Your Missed Calls Are Costing You</h2>
+            <ul>
+                <li>Enter the average lifetime value of a customer</li>
+                <li>Enter an estimate of how many calls you miss per month</li>
+                <li>Enter the rate at which you close new sales</li>
+                <li>Hit Calculate and we'll show you how much money we can make you!</li>
+            </ul>
+            <button class="cta-btn">Get Started Risk-Free For 7 Days!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
